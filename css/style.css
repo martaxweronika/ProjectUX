@@ -1,3 +1,4 @@
+/* Fonts load */
 @font-face {
     font-family: Lato-light;
     src: url('../fonts/Lato-Light.ttf');   
@@ -22,6 +23,8 @@ body {
 	background: #efefef;
 	font-family: Lato-Regular;
 }
+
+/* Headers */
 h6 {
 	color: #e5c220;
 	margin-left: 10px;
@@ -37,16 +40,55 @@ h4 {
 	color: white;
 }
 
+/* Navbar */
 .title {
   color:white;
   display: inline-block;
   margin-left: 4px;
 }
+
 .fa-puzzle-piece {
   color:white;
   display: inline-block;
 }
 
+.button-circle {
+  width: 50px;
+  height: 50px;
+    border-radius: 50%;
+    overflow:hidden;
+    margin: 7px 5px 7px 5px;
+}
+
+.search-form {
+  width:35%;
+  height:30px;
+  border-radius: 20px;
+  margin: 20px 5px 7px 145px;
+}
+
+.navbar-default {
+  margin:0;
+  border:0;
+  background-color: #2c2e44;
+  border-radius: 0;
+}
+
+.navbar-nav {
+  margin-right: 50px;
+}
+
+.logo {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.button-circle:hover,
+.button-circle:active {
+  border-radius: 50%;
+}
+
+/* Sidebar */
 .sidebar-background {
 	background-image: url("../images/book.png");
 	background-size: cover;
@@ -56,23 +98,8 @@ h4 {
   position: absolute;
 }
 
-
 .sidebar-nav {
   height: inherit;
-}
-
-.fa-user {
-  color:white;
-    display: inline-block;
-}
-
-.button-circle {
-	width: 50px;
-	height: 50px;
-    border-radius: 50%;
-    overflow:hidden;
-    margin: 7px 5px 7px 5px;
-
 }
 
 .profile-photo {
@@ -85,65 +112,36 @@ h4 {
   margin-bottom: 30px;
 }
 
-.teacher-subjects {
-  padding-bottom: 10px;
-}
-
-.navbar-nav {
-	margin-right: 50px;
-}
-.form-group {
-margin-top: 10px;
-}
-
-.search-form {
-width:35%;
-height:30px;
-border-radius: 20px;
-margin: 20px 5px 7px 145px;
-
-}
-
-.navbar-default {
-	margin:0;
-	border:0;
-	background-color: #2c2e44;
-	border-radius: 0;
-}
-
-.logo {
-	margin-left: 20px;
-	margin-top: 30px;
-}
+/* Content */
 .rectangle-wrapper {
-	margin-left: 280px;
+  margin-left: 280px;
 }
 
 .rectangle {
-	float: right;
-	margin:2%;
-	width: 100%;
-	height: 600px;
-	color: #2c2e44;
-	text-align: center;
-	-webkit-box-shadow: 4px 4px 8px #D3D3D3;
-	-moz-box-shadow: 4px 4px 8px #D3D3D3;
-	box-shadow: 4px 4px 8px #D3D3D3;
-	background-color: #FFFFFF;
+  float: right;
+  margin:2%;
+  width: 100%;
+  height: 600px;
+  color: #2c2e44;
+  text-align: center;
+  -webkit-box-shadow: 4px 4px 8px #D3D3D3;
+  -moz-box-shadow: 4px 4px 8px #D3D3D3;
+  box-shadow: 4px 4px 8px #D3D3D3;
+  background-color: #FFFFFF;
+}
+
+
+/* Tabs */
+.form-group {
+  margin-top: 10px;
 }
 
 .tab-wrap input[type=radio] {
   display: none;
 }
 
-label, p, a, h1, div {
-  font-family: Roboto, sans-serif;
-}
-
 .tab-wrap {
   width: 100%;
-  /*margin-left: 20%;*/
-  /*margin-top: 12%;*/
   position: static;
   display: -webkit-box;
   display: -webkit-flex;
@@ -228,42 +226,6 @@ label {
     top: -106px;
   }
 }
-.follow {
-  width: 42px;
-  height: 42px;
-  border-radius: 50px;
-  background: #2c2e44;
-  display: block;
-  margin: 300px auto 0;
-  white-space: nowrap;
-  padding: 13px;
-  box-sizing: border-box;
-  color: #54577b;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-family: Regular-Lato, sans-serif;
-  text-decoration: none;
-  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
-}
-.follow i {
-  margin-right: 20px;
-  -webkit-transition: margin-right 0.2s ease;
-  transition: margin-right 0.2s ease;
-}
-.follow:hover {
-  width: 134px;
-}
-.follow:hover i {
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 800px) {
-  .follow {
-    margin: 400px auto 0;
-  }
-}
-
-
 
 table, td, th {    
     border: 1px solid #ddd;
@@ -272,13 +234,13 @@ table, td, th {
 
 table {
     border-collapse: collapse;
-    width: 95%;
-    
+    width: 95%;   
 }
 
 th, td {
     padding: 15px;
 }
+
 th {
   background-color: #2c2e44;
   color: #ffffff;
@@ -294,7 +256,6 @@ tr {
 }
 .checkbox {
   background-color: none;
-
 }
 
 .checkbox input[type=checkbox] {
@@ -312,7 +273,6 @@ tr {
 .form-control {
   width:50%;
   display:inline;
-
 }
 
 .space {
@@ -325,7 +285,7 @@ tr {
 }
 
 .btn-primary {
- background-color: #2c2e44;
- border-radius: 10px;
- margin-left: 2%;
+  background-color: #2c2e44;
+  border-radius: 10px;
+  margin-left: 2%;
 }

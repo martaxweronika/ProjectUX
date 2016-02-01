@@ -11,22 +11,26 @@
 
     <title>Project UX</title>
 
-    <!-- Bootstrap Core CSS -->
+<!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Font Awesome CSS -->
+<!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- side menu-->
+
+<!-- Side menu-->
     <link href="css/simple-sidebar.css" rel="stylesheet">
-    <!-- Custom CSS -->
+
+<!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
+
+<!--Navbar-->
+<nav class="navbar navbar-default">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+<!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -36,18 +40,14 @@
           </button>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+<!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
           </ul>
           <h4 class="fa fa-puzzle-piece"></h4><p class="title">ITpuzzles</p>
           <input class="search-form" type="text" value="  Search">
-                <!-- <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                      <input type="text" class="form-control search-form" placeholder="Search">
-                    </div>
-                </form> -->
-            <!-- Indicates a successful or positive action -->
+
+<!-- Indicates a successful or positive action -->
           <ul class="nav navbar-nav navbar-right">
             <button type="button" class="btn btn-success button-circle">
                 <i class="fa fa-users"></i></button>
@@ -60,9 +60,11 @@
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
-    </nav>
-    <div>
-        <!-- Sidebar -->
+</nav>
+
+   
+<div><!-- Page content --> 
+<!-- Sidebar -->
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
@@ -103,18 +105,20 @@
                 </ul>
             </div>
         </div>
+
+<!-- Content field -->
         <div class="rectangle-wrapper">
             <div class="rectangle">
-                
+<!-- Tabs -->
                 <div class="tab-wrap">
+  <!-- Inbox tab -->
                     <input type="radio" name="tabs" id="tab1" checked>
                     <div class="tab-label-content" id="tab1-content">
                         <label for="tab1">Inbox</label>
                             <div class="tab-content">
-                                
                                 <table align ="center">
                                   <tr>
-                                    <th align ="center"><p class="fa fa-trash"></p>Delate</th>
+                                    <th align ="center"><p class="fa fa-trash"></p> Delate</th>
                                     <th align ="center"><p class="fa fa-calendar"></p> Date</th>
                                     <th align ="center"><p class="fa fa-user"></p> Student</th>
                                     <th align ="center"><p class="fa fa-envelope"></p> Message</th>
@@ -122,88 +126,95 @@
                                   <tr>
                                     <td class="delete">
                                         <div class="checkbox">
-                                        <label>
-                                          <input type="checkbox"> 
-                                        </label>
-                                      </div>
+                                          <label>
+                                            <input type="checkbox"> 
+                                          </label>
+                                        </div>
                                     </td>
                                     <td>20-11-2015</td>
                                     <td>Caroline Smith<br> class 1a</td>
                                     <td class="message"><p>Important!!! <br>I would like to...</td>
                                   </tr>
                                   <tr>
-                                    <td class="delete"><div class="checkbox">
-                                        <label>
-                                          <input type="checkbox"> 
-                                        </label>
-                                      </div>
+                                    <td class="delete">
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox"> 
+                                          </label>
+                                        </div>
                                     </td>
                                     <td>10-11-2015</td>
                                     <td>Maciej Nowak<br> class 1a</td>
                                     <td class="message"><p>Dear Mrs. Bozenka <br> I have a question about the test in next week</td>
                                   </tr>
                                   <tr>
-                                    <td class="delete"><div class="checkbox">
-                                        <label>
-                                          <input type="checkbox"> 
-                                        </label>
-                                      </div>
+                                    <td class="delete">
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox"> 
+                                          </label>
+                                        </div>
                                     </td>
                                     <td>9-11-2015</td>
                                     <td>Dominika Kruk<br> class 1a</td>
                                     <td class="message"><p >Dear Mrs. Bozenka <br> I have a question about the test in next week</td>
                                   </tr>
                                   <tr>
-                                    <td class="delete"><div class="checkbox">
-                                        <label>
-                                          <input type="checkbox"> 
-                                        </label>
-                                      </div>
+                                    <td class="delete">
+                                        <div class="checkbox">
+                                          <label>
+                                            <input type="checkbox"> 
+                                          </label>
+                                        </div>
                                     </td>
                                     <td>9-11-2015</td>
                                     <td>Caroline Smith<br> class 1a</td>
                                     <td class="message"><p>Dear Mrs. Bozenka <br> I have a question about the test in next week</td>
                                   </tr>
                                 </table>
-
-                             </div>
+                            </div>
                     </div>
                     </input>
-                     
+  <!-- Compose tab -->                    
                     <input type="radio" name="tabs" id="tab2">
                     <div class="tab-label-content" id="tab2-content">
-                      <label for="tab2">Compose</label>
-                      <div class="tab-content">
-                        <div class="form-group" align="center">
-                          <div class="space"><input type="text" class="form-control" id="usr" placeholder="Email"> </div>
-                          <div class="space"><input type="text" class="form-control" id="usr" placeholder="Subject"></div>
-                          <div class="space"><textarea class="form-control" rows="7" id="comment" placeholder="Content"></textarea></div>
-                        </div>
-                          <select class="form-control" align="center" id="sel1">
-                            <option>Skeleton</option>
-                            <option>Day off</option>
-                            <option>Final marks</option>
-                            <option>Information meeting with parents</option>
-                          </select>
-                          <div class="space_button" align="right">
-                           <button type="button" class="btn btn-primary">Default</button>
-                           <button type="button" class="btn btn-primary">Default</button></div>
+                        <label for="tab2">Compose</label>
+                        <div class="tab-content">
+
+                            <div class="form-group" align="center">
+
+                                <div class="space"><input type="text" class="form-control" id="usr" placeholder="Email">
+                                </div>
+
+                                <div class="space"><input type="text" class="form-control" id="usr" placeholder="Subject">
+                                </div>
+
+                                <div class="space"><textarea class="form-control" rows="7" id="comment" placeholder="Content"></textarea>
+                                </div>
+
+                            </div>
+                                
+                            <select class="form-control" align="center" id="sel1">
+                                <option>Skeleton</option>
+                                <option>Day off</option>
+                                <option>Final marks</option>
+                                <option>Information meeting with parents</option>
+                            </select>
+                                
+                            <div class="space_button" align="right">
+                                <button type="button" class="btn btn-primary">Cancel</button>
+                                <button type="button" class="btn btn-primary">Send</button>
+                            </div>
+
                         </div>
                     </div>
+                   </input>
+  <!-- Sliding bar --> 
                     <div class="slide"></div>
                 </div>
-                </ul>
             </div>
         </div>
-    </div>
-
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/javascript.js"></script>
+</div><!-- Page content --> 
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
